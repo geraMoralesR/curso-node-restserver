@@ -4,7 +4,7 @@ const Usuario = require("../models/usuario");
 
 const userGet = async (req, res = response) => {
 
-    const { limite = 11, desde = 0 } = req.query;
+    const { limite = 5, desde = 0 } = req.query;
     const query = { estado: true };
     /*const usuarios = await Usuario.find(query)
         .skip(Number(desde))
